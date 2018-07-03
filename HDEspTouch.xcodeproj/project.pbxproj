@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		321F725720EB2AF3003FFBA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321F725620EB2AF3003FFBA4 /* CoreGraphics.framework */; };
+		321F725920EB2AFB003FFBA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321F725820EB2AFB003FFBA4 /* UIKit.framework */; };
+		321F725B20EB2B02003FFBA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321F725A20EB2B02003FFBA4 /* Foundation.framework */; };
+		321F72AA20EB84B5003FFBA4 /* HDEspTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F728920EB84B5003FFBA4 /* HDEspTouch.m */; };
+		321F72AB20EB84B5003FFBA4 /* ESPGuideCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F728C20EB84B5003FFBA4 /* ESPGuideCode.m */; };
+		321F72AC20EB84B5003FFBA4 /* ESPTouchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F728D20EB84B5003FFBA4 /* ESPTouchResult.m */; };
+		321F72AD20EB84B5003FFBA4 /* ESP_NetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F729020EB84B5003FFBA4 /* ESP_NetUtil.m */; };
+		321F72AE20EB84B5003FFBA4 /* ESP_ByteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F729120EB84B5003FFBA4 /* ESP_ByteUtil.m */; };
+		321F72AF20EB84B5003FFBA4 /* ESP_WifiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F729220EB84B5003FFBA4 /* ESP_WifiUtil.m */; };
+		321F72B020EB84B5003FFBA4 /* ESPTouchGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F729320EB84B5003FFBA4 /* ESPTouchGenerator.m */; };
+		321F72B120EB84B5003FFBA4 /* ESP_CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F729420EB84B5003FFBA4 /* ESP_CRC8.m */; };
+		321F72B220EB84B5003FFBA4 /* ESPUDPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F729620EB84B5003FFBA4 /* ESPUDPSocketServer.m */; };
+		321F72B320EB84B5003FFBA4 /* ESPUDPSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F72A020EB84B5003FFBA4 /* ESPUDPSocketClient.m */; };
+		321F72B420EB84B5003FFBA4 /* ESPTouchTaskParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F72A120EB84B5003FFBA4 /* ESPTouchTaskParameter.m */; };
+		321F72B520EB84B5003FFBA4 /* ESPDataCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F72A220EB84B5003FFBA4 /* ESPDataCode.m */; };
+		321F72B620EB84B5003FFBA4 /* ESPAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F72A720EB84B5003FFBA4 /* ESPAES.m */; };
+		321F72B720EB84B5003FFBA4 /* ESPTouchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F72A820EB84B5003FFBA4 /* ESPTouchTask.m */; };
+		321F72B820EB84B5003FFBA4 /* ESPDatumCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F72A920EB84B5003FFBA4 /* ESPDatumCode.m */; };
+		32698D1920E4D4010040817C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D1820E4D4010040817C /* AppDelegate.m */; };
+		32698D1C20E4D4010040817C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D1B20E4D4010040817C /* ViewController.m */; };
+		32698D1F20E4D4010040817C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32698D1D20E4D4010040817C /* Main.storyboard */; };
+		32698D2120E4D4030040817C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32698D2020E4D4030040817C /* Assets.xcassets */; };
+		32698D2420E4D4030040817C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32698D2220E4D4030040817C /* LaunchScreen.storyboard */; };
+		32698D2720E4D4030040817C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D2620E4D4030040817C /* main.m */; };
+		32698D3120E4D4030040817C /* HDEspTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D3020E4D4030040817C /* HDEspTouchTests.m */; };
+		32698D6820E4D5F30040817C /* UITextField+MHD_TextFieldCommonSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D3E20E4D5F20040817C /* UITextField+MHD_TextFieldCommonSetting.m */; };
+		32698D6920E4D5F30040817C /* UILabel+MHD_LabelCommonSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D4220E4D5F20040817C /* UILabel+MHD_LabelCommonSetting.m */; };
+		32698D6A20E4D5F30040817C /* UIButton+MHD_ButtonCommonSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D4520E4D5F20040817C /* UIButton+MHD_ButtonCommonSetting.m */; };
+		32698D6B20E4D5F30040817C /* UIView+MHD_ViewCommonSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 32698D4820E4D5F20040817C /* UIView+MHD_ViewCommonSetting.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32698D2D20E4D4030040817C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32698D0C20E4D4010040817C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32698D1320E4D4010040817C;
+			remoteInfo = HDEspTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		321F725620EB2AF3003FFBA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		321F725820EB2AFB003FFBA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		321F725A20EB2B02003FFBA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		321F728920EB84B5003FFBA4 /* HDEspTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDEspTouch.m; sourceTree = "<group>"; };
+		321F728A20EB84B5003FFBA4 /* HDEspTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDEspTouch.h; sourceTree = "<group>"; };
+		321F728C20EB84B5003FFBA4 /* ESPGuideCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPGuideCode.m; sourceTree = "<group>"; };
+		321F728D20EB84B5003FFBA4 /* ESPTouchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchResult.m; sourceTree = "<group>"; };
+		321F728E20EB84B5003FFBA4 /* ESPTouchTaskParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTaskParameter.h; sourceTree = "<group>"; };
+		321F728F20EB84B5003FFBA4 /* ESPUDPSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketClient.h; sourceTree = "<group>"; };
+		321F729020EB84B5003FFBA4 /* ESP_NetUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_NetUtil.m; sourceTree = "<group>"; };
+		321F729120EB84B5003FFBA4 /* ESP_ByteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_ByteUtil.m; sourceTree = "<group>"; };
+		321F729220EB84B5003FFBA4 /* ESP_WifiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_WifiUtil.m; sourceTree = "<group>"; };
+		321F729320EB84B5003FFBA4 /* ESPTouchGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchGenerator.m; sourceTree = "<group>"; };
+		321F729420EB84B5003FFBA4 /* ESP_CRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_CRC8.m; sourceTree = "<group>"; };
+		321F729520EB84B5003FFBA4 /* ESPVersionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPVersionMacro.h; sourceTree = "<group>"; };
+		321F729620EB84B5003FFBA4 /* ESPUDPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketServer.m; sourceTree = "<group>"; };
+		321F729720EB84B5003FFBA4 /* ESPDataCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDataCode.h; sourceTree = "<group>"; };
+		321F729820EB84B5003FFBA4 /* ESPDatumCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDatumCode.h; sourceTree = "<group>"; };
+		321F729920EB84B5003FFBA4 /* ESPTouchTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTask.h; sourceTree = "<group>"; };
+		321F729A20EB84B5003FFBA4 /* ESPAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPAES.h; sourceTree = "<group>"; };
+		321F729B20EB84B5003FFBA4 /* ESPTouchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchResult.h; sourceTree = "<group>"; };
+		321F729C20EB84B5003FFBA4 /* ESPTouchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchDelegate.h; sourceTree = "<group>"; };
+		321F729D20EB84B5003FFBA4 /* ESPGuideCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPGuideCode.h; sourceTree = "<group>"; };
+		321F729E20EB84B5003FFBA4 /* ESP_NetUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_NetUtil.h; sourceTree = "<group>"; };
+		321F729F20EB84B5003FFBA4 /* ESP_ByteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_ByteUtil.h; sourceTree = "<group>"; };
+		321F72A020EB84B5003FFBA4 /* ESPUDPSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketClient.m; sourceTree = "<group>"; };
+		321F72A120EB84B5003FFBA4 /* ESPTouchTaskParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTaskParameter.m; sourceTree = "<group>"; };
+		321F72A220EB84B5003FFBA4 /* ESPDataCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDataCode.m; sourceTree = "<group>"; };
+		321F72A320EB84B5003FFBA4 /* ESPUDPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketServer.h; sourceTree = "<group>"; };
+		321F72A420EB84B5003FFBA4 /* ESP_CRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_CRC8.h; sourceTree = "<group>"; };
+		321F72A520EB84B5003FFBA4 /* ESPTouchGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchGenerator.h; sourceTree = "<group>"; };
+		321F72A620EB84B5003FFBA4 /* ESP_WifiUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_WifiUtil.h; sourceTree = "<group>"; };
+		321F72A720EB84B5003FFBA4 /* ESPAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPAES.m; sourceTree = "<group>"; };
+		321F72A820EB84B5003FFBA4 /* ESPTouchTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTask.m; sourceTree = "<group>"; };
+		321F72A920EB84B5003FFBA4 /* ESPDatumCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDatumCode.m; sourceTree = "<group>"; };
+		32698D1420E4D4010040817C /* HDEspTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDEspTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32698D1720E4D4010040817C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32698D1820E4D4010040817C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32698D1A20E4D4010040817C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32698D1B20E4D4010040817C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32698D1E20E4D4010040817C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32698D2020E4D4030040817C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32698D2320E4D4030040817C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32698D2520E4D4030040817C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32698D2620E4D4030040817C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32698D2C20E4D4030040817C /* HDEspTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDEspTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32698D3020E4D4030040817C /* HDEspTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDEspTouchTests.m; sourceTree = "<group>"; };
+		32698D3220E4D4030040817C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32698D3E20E4D5F20040817C /* UITextField+MHD_TextFieldCommonSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MHD_TextFieldCommonSetting.m"; sourceTree = "<group>"; };
+		32698D3F20E4D5F20040817C /* UITextField+MHD_TextFieldCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MHD_TextFieldCommonSetting.h"; sourceTree = "<group>"; };
+		32698D4120E4D5F20040817C /* UILabel+MHD_LabelCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MHD_LabelCommonSetting.h"; sourceTree = "<group>"; };
+		32698D4220E4D5F20040817C /* UILabel+MHD_LabelCommonSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MHD_LabelCommonSetting.m"; sourceTree = "<group>"; };
+		32698D4420E4D5F20040817C /* UIButton+MHD_ButtonCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MHD_ButtonCommonSetting.h"; sourceTree = "<group>"; };
+		32698D4520E4D5F20040817C /* UIButton+MHD_ButtonCommonSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MHD_ButtonCommonSetting.m"; sourceTree = "<group>"; };
+		32698D4720E4D5F20040817C /* UIView+MHD_ViewCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MHD_ViewCommonSetting.h"; sourceTree = "<group>"; };
+		32698D4820E4D5F20040817C /* UIView+MHD_ViewCommonSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MHD_ViewCommonSetting.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32698D1120E4D4010040817C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321F725B20EB2B02003FFBA4 /* Foundation.framework in Frameworks */,
+				321F725920EB2AFB003FFBA4 /* UIKit.framework in Frameworks */,
+				321F725720EB2AF3003FFBA4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32698D2920E4D4030040817C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		321F725520EB2AF2003FFBA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				321F725A20EB2B02003FFBA4 /* Foundation.framework */,
+				321F725820EB2AFB003FFBA4 /* UIKit.framework */,
+				321F725620EB2AF3003FFBA4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		321F728820EB84B5003FFBA4 /* HDEspTouch */ = {
+			isa = PBXGroup;
+			children = (
+				321F728920EB84B5003FFBA4 /* HDEspTouch.m */,
+				321F728A20EB84B5003FFBA4 /* HDEspTouch.h */,
+				321F728B20EB84B5003FFBA4 /* EspTouch */,
+			);
+			path = HDEspTouch;
+			sourceTree = "<group>";
+		};
+		321F728B20EB84B5003FFBA4 /* EspTouch */ = {
+			isa = PBXGroup;
+			children = (
+				321F728C20EB84B5003FFBA4 /* ESPGuideCode.m */,
+				321F728D20EB84B5003FFBA4 /* ESPTouchResult.m */,
+				321F728E20EB84B5003FFBA4 /* ESPTouchTaskParameter.h */,
+				321F728F20EB84B5003FFBA4 /* ESPUDPSocketClient.h */,
+				321F729020EB84B5003FFBA4 /* ESP_NetUtil.m */,
+				321F729120EB84B5003FFBA4 /* ESP_ByteUtil.m */,
+				321F729220EB84B5003FFBA4 /* ESP_WifiUtil.m */,
+				321F729320EB84B5003FFBA4 /* ESPTouchGenerator.m */,
+				321F729420EB84B5003FFBA4 /* ESP_CRC8.m */,
+				321F729520EB84B5003FFBA4 /* ESPVersionMacro.h */,
+				321F729620EB84B5003FFBA4 /* ESPUDPSocketServer.m */,
+				321F729720EB84B5003FFBA4 /* ESPDataCode.h */,
+				321F729820EB84B5003FFBA4 /* ESPDatumCode.h */,
+				321F729920EB84B5003FFBA4 /* ESPTouchTask.h */,
+				321F729A20EB84B5003FFBA4 /* ESPAES.h */,
+				321F729B20EB84B5003FFBA4 /* ESPTouchResult.h */,
+				321F729C20EB84B5003FFBA4 /* ESPTouchDelegate.h */,
+				321F729D20EB84B5003FFBA4 /* ESPGuideCode.h */,
+				321F729E20EB84B5003FFBA4 /* ESP_NetUtil.h */,
+				321F729F20EB84B5003FFBA4 /* ESP_ByteUtil.h */,
+				321F72A020EB84B5003FFBA4 /* ESPUDPSocketClient.m */,
+				321F72A120EB84B5003FFBA4 /* ESPTouchTaskParameter.m */,
+				321F72A220EB84B5003FFBA4 /* ESPDataCode.m */,
+				321F72A320EB84B5003FFBA4 /* ESPUDPSocketServer.h */,
+				321F72A420EB84B5003FFBA4 /* ESP_CRC8.h */,
+				321F72A520EB84B5003FFBA4 /* ESPTouchGenerator.h */,
+				321F72A620EB84B5003FFBA4 /* ESP_WifiUtil.h */,
+				321F72A720EB84B5003FFBA4 /* ESPAES.m */,
+				321F72A820EB84B5003FFBA4 /* ESPTouchTask.m */,
+				321F72A920EB84B5003FFBA4 /* ESPDatumCode.m */,
+			);
+			path = EspTouch;
+			sourceTree = "<group>";
+		};
+		32698D0B20E4D4010040817C = {
+			isa = PBXGroup;
+			children = (
+				32698D1620E4D4010040817C /* HDEspTouch */,
+				32698D2F20E4D4030040817C /* HDEspTouchTests */,
+				32698D1520E4D4010040817C /* Products */,
+				321F725520EB2AF2003FFBA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32698D1520E4D4010040817C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32698D1420E4D4010040817C /* HDEspTouch.app */,
+				32698D2C20E4D4030040817C /* HDEspTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32698D1620E4D4010040817C /* HDEspTouch */ = {
+			isa = PBXGroup;
+			children = (
+				32698D1720E4D4010040817C /* AppDelegate.h */,
+				32698D1820E4D4010040817C /* AppDelegate.m */,
+				32698D1A20E4D4010040817C /* ViewController.h */,
+				32698D1B20E4D4010040817C /* ViewController.m */,
+				32698D3B20E4D5F20040817C /* Library */,
+				32698D1D20E4D4010040817C /* Main.storyboard */,
+				32698D2020E4D4030040817C /* Assets.xcassets */,
+				32698D2220E4D4030040817C /* LaunchScreen.storyboard */,
+				32698D2520E4D4030040817C /* Info.plist */,
+				32698D2620E4D4030040817C /* main.m */,
+			);
+			path = HDEspTouch;
+			sourceTree = "<group>";
+		};
+		32698D2F20E4D4030040817C /* HDEspTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				32698D3020E4D4030040817C /* HDEspTouchTests.m */,
+				32698D3220E4D4030040817C /* Info.plist */,
+			);
+			path = HDEspTouchTests;
+			sourceTree = "<group>";
+		};
+		32698D3B20E4D5F20040817C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				321F728820EB84B5003FFBA4 /* HDEspTouch */,
+				32698D3C20E4D5F20040817C /* MHD_Category */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		32698D3C20E4D5F20040817C /* MHD_Category */ = {
+			isa = PBXGroup;
+			children = (
+				32698D3D20E4D5F20040817C /* MHD_UITextfield */,
+				32698D4020E4D5F20040817C /* MHD_UILabel */,
+				32698D4320E4D5F20040817C /* MHD_UIButton */,
+				32698D4620E4D5F20040817C /* MHD_UIView */,
+			);
+			path = MHD_Category;
+			sourceTree = "<group>";
+		};
+		32698D3D20E4D5F20040817C /* MHD_UITextfield */ = {
+			isa = PBXGroup;
+			children = (
+				32698D3E20E4D5F20040817C /* UITextField+MHD_TextFieldCommonSetting.m */,
+				32698D3F20E4D5F20040817C /* UITextField+MHD_TextFieldCommonSetting.h */,
+			);
+			path = MHD_UITextfield;
+			sourceTree = "<group>";
+		};
+		32698D4020E4D5F20040817C /* MHD_UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				32698D4120E4D5F20040817C /* UILabel+MHD_LabelCommonSetting.h */,
+				32698D4220E4D5F20040817C /* UILabel+MHD_LabelCommonSetting.m */,
+			);
+			path = MHD_UILabel;
+			sourceTree = "<group>";
+		};
+		32698D4320E4D5F20040817C /* MHD_UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				32698D4420E4D5F20040817C /* UIButton+MHD_ButtonCommonSetting.h */,
+				32698D4520E4D5F20040817C /* UIButton+MHD_ButtonCommonSetting.m */,
+			);
+			path = MHD_UIButton;
+			sourceTree = "<group>";
+		};
+		32698D4620E4D5F20040817C /* MHD_UIView */ = {
+			isa = PBXGroup;
+			children = (
+				32698D4720E4D5F20040817C /* UIView+MHD_ViewCommonSetting.h */,
+				32698D4820E4D5F20040817C /* UIView+MHD_ViewCommonSetting.m */,
+			);
+			path = MHD_UIView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32698D1320E4D4010040817C /* HDEspTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32698D3520E4D4030040817C /* Build configuration list for PBXNativeTarget "HDEspTouch" */;
+			buildPhases = (
+				32698D1020E4D4010040817C /* Sources */,
+				32698D1120E4D4010040817C /* Frameworks */,
+				32698D1220E4D4010040817C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDEspTouch;
+			productName = HDEspTouch;
+			productReference = 32698D1420E4D4010040817C /* HDEspTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32698D2B20E4D4030040817C /* HDEspTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32698D3820E4D4030040817C /* Build configuration list for PBXNativeTarget "HDEspTouchTests" */;
+			buildPhases = (
+				32698D2820E4D4030040817C /* Sources */,
+				32698D2920E4D4030040817C /* Frameworks */,
+				32698D2A20E4D4030040817C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32698D2E20E4D4030040817C /* PBXTargetDependency */,
+			);
+			name = HDEspTouchTests;
+			productName = HDEspTouchTests;
+			productReference = 32698D2C20E4D4030040817C /* HDEspTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32698D0C20E4D4010040817C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "马赫迪";
+				TargetAttributes = {
+					32698D1320E4D4010040817C = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = L84JN7857E;
+						ProvisioningStyle = Automatic;
+					};
+					32698D2B20E4D4030040817C = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = L84JN7857E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32698D1320E4D4010040817C;
+					};
+				};
+			};
+			buildConfigurationList = 32698D0F20E4D4010040817C /* Build configuration list for PBXProject "HDEspTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32698D0B20E4D4010040817C;
+			productRefGroup = 32698D1520E4D4010040817C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32698D1320E4D4010040817C /* HDEspTouch */,
+				32698D2B20E4D4030040817C /* HDEspTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32698D1220E4D4010040817C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32698D2420E4D4030040817C /* LaunchScreen.storyboard in Resources */,
+				32698D2120E4D4030040817C /* Assets.xcassets in Resources */,
+				32698D1F20E4D4010040817C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32698D2A20E4D4030040817C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32698D1020E4D4010040817C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321F72B720EB84B5003FFBA4 /* ESPTouchTask.m in Sources */,
+				321F72B320EB84B5003FFBA4 /* ESPUDPSocketClient.m in Sources */,
+				321F72B220EB84B5003FFBA4 /* ESPUDPSocketServer.m in Sources */,
+				32698D1C20E4D4010040817C /* ViewController.m in Sources */,
+				321F72B520EB84B5003FFBA4 /* ESPDataCode.m in Sources */,
+				321F72B620EB84B5003FFBA4 /* ESPAES.m in Sources */,
+				32698D6920E4D5F30040817C /* UILabel+MHD_LabelCommonSetting.m in Sources */,
+				321F72AD20EB84B5003FFBA4 /* ESP_NetUtil.m in Sources */,
+				321F72B420EB84B5003FFBA4 /* ESPTouchTaskParameter.m in Sources */,
+				321F72AF20EB84B5003FFBA4 /* ESP_WifiUtil.m in Sources */,
+				32698D6820E4D5F30040817C /* UITextField+MHD_TextFieldCommonSetting.m in Sources */,
+				321F72B820EB84B5003FFBA4 /* ESPDatumCode.m in Sources */,
+				32698D6B20E4D5F30040817C /* UIView+MHD_ViewCommonSetting.m in Sources */,
+				321F72B020EB84B5003FFBA4 /* ESPTouchGenerator.m in Sources */,
+				321F72B120EB84B5003FFBA4 /* ESP_CRC8.m in Sources */,
+				32698D6A20E4D5F30040817C /* UIButton+MHD_ButtonCommonSetting.m in Sources */,
+				321F72AE20EB84B5003FFBA4 /* ESP_ByteUtil.m in Sources */,
+				321F72AB20EB84B5003FFBA4 /* ESPGuideCode.m in Sources */,
+				32698D2720E4D4030040817C /* main.m in Sources */,
+				321F72AA20EB84B5003FFBA4 /* HDEspTouch.m in Sources */,
+				32698D1920E4D4010040817C /* AppDelegate.m in Sources */,
+				321F72AC20EB84B5003FFBA4 /* ESPTouchResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32698D2820E4D4030040817C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32698D3120E4D4030040817C /* HDEspTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32698D2E20E4D4030040817C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32698D1320E4D4010040817C /* HDEspTouch */;
+			targetProxy = 32698D2D20E4D4030040817C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32698D1D20E4D4010040817C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32698D1E20E4D4010040817C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32698D2220E4D4030040817C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32698D2320E4D4030040817C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32698D3320E4D4030040817C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32698D3420E4D4030040817C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32698D3620E4D4030040817C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L84JN7857E;
+				INFOPLIST_FILE = HDEspTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardee.HDEspTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32698D3720E4D4030040817C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L84JN7857E;
+				INFOPLIST_FILE = HDEspTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardee.HDEspTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32698D3920E4D4030040817C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L84JN7857E;
+				INFOPLIST_FILE = HDEspTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardee.HDEspTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDEspTouch.app/HDEspTouch";
+			};
+			name = Debug;
+		};
+		32698D3A20E4D4030040817C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L84JN7857E;
+				INFOPLIST_FILE = HDEspTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardee.HDEspTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDEspTouch.app/HDEspTouch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32698D0F20E4D4010040817C /* Build configuration list for PBXProject "HDEspTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32698D3320E4D4030040817C /* Debug */,
+				32698D3420E4D4030040817C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32698D3520E4D4030040817C /* Build configuration list for PBXNativeTarget "HDEspTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32698D3620E4D4030040817C /* Debug */,
+				32698D3720E4D4030040817C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32698D3820E4D4030040817C /* Build configuration list for PBXNativeTarget "HDEspTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32698D3920E4D4030040817C /* Debug */,
+				32698D3A20E4D4030040817C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32698D0C20E4D4010040817C /* Project object */;
+}
