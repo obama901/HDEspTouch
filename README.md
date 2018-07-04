@@ -49,7 +49,7 @@ Demo中取消使用:
 
 ## 说明
 
-根据EspTouch "https://github.com/EspressifApp/EsptouchForIOS"封装;</br>
+根据EspTouch "https://github.com/EspressifApp/EsptouchForIOS" 封装;</br>
 目前引用的版本号"v0.3.6.1"
 
 Android版本友好链接 "https://github.com/EspressifApp/EsptouchForAndroid"
