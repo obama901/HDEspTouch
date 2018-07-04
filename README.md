@@ -47,7 +47,7 @@ Demo中取消使用:
 
 详细信息请下载demo查看;
 
-##说明
+## 说明
 
 根据EspTouch "https://github.com/EspressifApp/EsptouchForIOS"封装;</br>
 目前引用的版本号"v0.3.6.1"
